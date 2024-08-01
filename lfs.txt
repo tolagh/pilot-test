@@ -1,0 +1,1117 @@
+co69748@SL602523 MINGW64 /c/oracle-finance-oac (feature/test/yml)
+$ GIT_TRACE=1 GIT_CURL_VERBOSE=1 git push --verbose
+13:56:00.992056 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/bin
+13:56:01.009680 git.c:463               trace: built-in: git push --verbose
+13:56:01.022060 run-command.c:659       trace: run_command: GIT_DIR=.git git remote-https origin https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:01.052058 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:01.062073 git.c:749               trace: exec: git-remote-https origin https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:01.062073 run-command.c:659       trace: run_command: git-remote-https origin https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:01.107087 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+Pushing to https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:01.162101 http.c:845              == Info: processing: https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/refs?service=git-receive-pack
+13:56:01.162101 http.c:845              == Info: Couldn't find host github.com in the (nil) file; using defaults
+13:56:01.189382 http.c:845              == Info:   Trying 172.31.86.19:8080...
+13:56:01.191383 http.c:845              == Info: Connected to wgbipusr.dmz.standardlife.com (172.31.86.19) port 8080
+13:56:01.191383 http.c:845              == Info: CONNECT tunnel: HTTP/1.1 negotiated
+13:56:01.191383 http.c:845              == Info: allocate connect buffer
+13:56:01.191383 http.c:845              == Info: Establish HTTP proxy tunnel to github.com:443
+13:56:01.191383 http.c:792              => Send header, 0000000121 bytes (0x00000079)
+13:56:01.192382 http.c:804              => Send header: CONNECT github.com:443 HTTP/1.1
+13:56:01.192382 http.c:804              => Send header: Host: github.com:443
+13:56:01.192382 http.c:804              => Send header: User-Agent: git/2.42.0.windows.2
+13:56:01.192382 http.c:804              => Send header: Proxy-Connection: Keep-Alive
+13:56:01.192382 http.c:804              => Send header:
+13:56:01.213457 http.c:792              <= Recv header, 0000000037 bytes (0x00000025)
+13:56:01.213457 http.c:804              <= Recv header: HTTP/1.0 200 Connection established
+13:56:01.213457 http.c:792              <= Recv header, 0000000002 bytes (0x00000002)
+13:56:01.213457 http.c:804              <= Recv header:
+13:56:01.213457 http.c:845              == Info: CONNECT phase completed
+13:56:01.213457 http.c:845              == Info: CONNECT tunnel established, response 200
+13:56:01.213457 http.c:845              == Info: ALPN: offers h2,http/1.1
+13:56:01.213457 http.c:845              == Info: TLSv1.3 (OUT), TLS handshake, Client hello (1):
+13:56:01.597162 http.c:845              == Info:  CAfile: C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+13:56:01.597162 http.c:845              == Info:  CApath: none
+13:56:01.597162 http.c:845              == Info: TLSv1.3 (IN), TLS handshake, Server hello (2):
+13:56:01.597162 http.c:845              == Info: TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+13:56:01.597162 http.c:845              == Info: TLSv1.3 (IN), TLS handshake, Certificate (11):
+13:56:01.607241 http.c:845              == Info: TLSv1.3 (IN), TLS handshake, CERT verify (15):
+13:56:01.607241 http.c:845              == Info: TLSv1.3 (IN), TLS handshake, Finished (20):
+13:56:01.607241 http.c:845              == Info: TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+13:56:01.607241 http.c:845              == Info: TLSv1.3 (OUT), TLS handshake, Finished (20):
+13:56:01.607241 http.c:845              == Info: SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+13:56:01.607241 http.c:845              == Info: ALPN: server accepted h2
+13:56:01.607241 http.c:845              == Info: Server certificate:
+13:56:01.607241 http.c:845              == Info:  subject: CN=github.com
+13:56:01.607241 http.c:845              == Info:  start date: Mar  7 00:00:00 2024 GMT
+13:56:01.607241 http.c:845              == Info:  expire date: Mar  7 23:59:59 2025 GMT
+13:56:01.607241 http.c:845              == Info:  subjectAltName: host "github.com" matched cert's "github.com"
+13:56:01.607241 http.c:845              == Info:  issuer: C=GB; ST=Greater Manchester; L=Salford; O=Sectigo Limited; CN=Sectigo ECC Domain Validation Secure Server CA
+13:56:01.607241 http.c:845              == Info:  SSL certificate verify ok.
+13:56:01.607241 http.c:845              == Info: using HTTP/2
+13:56:01.607241 http.c:845              == Info: h2 [:method: GET]
+13:56:01.607241 http.c:845              == Info: h2 [:scheme: https]
+13:56:01.607241 http.c:845              == Info: h2 [:authority: github.com]
+13:56:01.607241 http.c:845              == Info: h2 [:path: /The-Phoenix-Group/oracle-finance-oac.git/info/refs?service=git-receive-pack]
+13:56:01.607241 http.c:845              == Info: h2 [user-agent: git/2.42.0.windows.2]
+13:56:01.607241 http.c:845              == Info: h2 [accept: */*]
+13:56:01.607241 http.c:845              == Info: h2 [accept-encoding: deflate, gzip, br, zstd]
+13:56:01.607241 http.c:845              == Info: h2 [pragma: no-cache]
+13:56:01.607241 http.c:845              == Info: Using Stream ID: 1
+13:56:01.607241 http.c:792              => Send header, 0000000216 bytes (0x000000d8)
+13:56:01.607241 http.c:804              => Send header: GET /The-Phoenix-Group/oracle-finance-oac.git/info/refs?service=git-receive-pack HTTP/2
+13:56:01.607241 http.c:804              => Send header: Host: github.com
+13:56:01.607241 http.c:804              => Send header: User-Agent: git/2.42.0.windows.2
+13:56:01.607241 http.c:804              => Send header: Accept: */*
+13:56:01.607241 http.c:804              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+13:56:01.607241 http.c:804              => Send header: Pragma: no-cache
+13:56:01.607241 http.c:804              => Send header:
+13:56:01.617349 http.c:845              == Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+13:56:01.617349 http.c:845              == Info: TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+13:56:01.617349 http.c:845              == Info: old SSL session ID is stale, removing
+13:56:01.751075 http.c:792              <= Recv header, 0000000013 bytes (0x0000000d)
+13:56:01.751075 http.c:804              <= Recv header: HTTP/2 401
+13:56:01.751075 http.c:792              <= Recv header, 0000000026 bytes (0x0000001a)
+13:56:01.751075 http.c:804              <= Recv header: server: GitHub-Babel/3.0
+13:56:01.751075 http.c:792              <= Recv header, 0000000054 bytes (0x00000036)
+13:56:01.751075 http.c:804              <= Recv header: content-security-policy: default-src 'none'; sandbox
+13:56:01.751075 http.c:792              <= Recv header, 0000000041 bytes (0x00000029)
+13:56:01.751075 http.c:804              <= Recv header: content-type: text/plain; charset=UTF-8
+13:56:01.751075 http.c:792              <= Recv header, 0000000040 bytes (0x00000028)
+13:56:01.751075 http.c:804              <= Recv header: www-authenticate: Basic realm="GitHub"
+13:56:01.751075 http.c:792              <= Recv header, 0000000020 bytes (0x00000014)
+13:56:01.751075 http.c:804              <= Recv header: content-length: 21
+13:56:01.751075 http.c:792              <= Recv header, 0000000037 bytes (0x00000025)
+13:56:01.751075 http.c:804              <= Recv header: date: Tue, 02 Jul 2024 12:56:00 GMT
+13:56:01.751075 http.c:792              <= Recv header, 0000000023 bytes (0x00000017)
+13:56:01.751075 http.c:804              <= Recv header: x-frame-options: DENY
+13:56:01.751075 http.c:792              <= Recv header, 0000000056 bytes (0x00000038)
+13:56:01.751075 http.c:804              <= Recv header: x-github-request-id: 6C58:639C0:800E35:8ED19D:6683F8E1
+13:56:01.751075 http.c:792              <= Recv header, 0000000002 bytes (0x00000002)
+13:56:01.751075 http.c:804              <= Recv header:
+13:56:01.751075 http.c:845              == Info: Connection #0 to host wgbipusr.dmz.standardlife.com left intact
+13:56:01.751075 run-command.c:659       trace: run_command: 'git credential-manager get'
+13:56:01.851166 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:01.866171 git.c:749               trace: exec: git-credential-manager get
+13:56:01.866171 run-command.c:659       trace: run_command: git-credential-manager get
+13:56:02.021256 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:02.036263 git.c:463               trace: built-in: git config --null --list
+13:56:02.223699 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:02.223699 git.c:463               trace: built-in: git version
+13:56:02.253624 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:02.270736 git.c:463               trace: built-in: git config --null --type=path credential.https://github.com.gitHubHelper
+13:56:02.321021 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:02.331105 git.c:463               trace: built-in: git config --null --type=path credential.github.com.gitHubHelper
+13:56:02.381584 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:02.401753 git.c:463               trace: built-in: git config --null --type=path credential.gitHubHelper
+13:56:05.351063 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:05.366063 git.c:463               trace: built-in: git config --null --type=path http.https://github.com.sslCAInfo
+13:56:05.396060 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:05.406072 git.c:463               trace: built-in: git config --null --type=path http.github.com.sslCAInfo
+13:56:05.436087 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:05.436087 git.c:463               trace: built-in: git config --null --type=path http.sslCAInfo
+13:56:05.481096 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:05.496094 git.c:463               trace: built-in: git config --null --type=path http.https://github.com.sslCAInfo
+13:56:05.521127 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:05.536130 git.c:463               trace: built-in: git config --null --type=path http.github.com.sslCAInfo
+13:56:05.581127 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:05.597423 git.c:463               trace: built-in: git config --null --type=path http.sslCAInfo
+13:56:05.636454 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:05.651461 git.c:463               trace: built-in: git config --null --type=path http.https://github.com.cookieFile
+13:56:05.681455 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:05.681455 git.c:463               trace: built-in: git config --null --type=path http.github.com.cookieFile
+13:56:05.752951 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:05.767916 git.c:463               trace: built-in: git config --null --type=path http.cookieFile
+13:56:07.320643 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:07.326200 git.c:463               trace: built-in: git config --null --type=path http.https://github.com.sslCAInfo
+13:56:07.356471 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:07.366525 git.c:463               trace: built-in: git config --null --type=path http.github.com.sslCAInfo
+13:56:07.416677 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:07.427817 git.c:463               trace: built-in: git config --null --type=path http.sslCAInfo
+13:56:07.462999 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:07.474695 git.c:463               trace: built-in: git config --null --type=path http.https://github.com.sslCAInfo
+13:56:07.511672 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:07.519685 git.c:463               trace: built-in: git config --null --type=path http.github.com.sslCAInfo
+13:56:07.555465 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:07.565736 git.c:463               trace: built-in: git config --null --type=path http.sslCAInfo
+13:56:07.601587 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:07.612717 git.c:463               trace: built-in: git config --null --type=path http.https://github.com.cookieFile
+13:56:07.641086 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:07.651207 git.c:463               trace: built-in: git config --null --type=path http.github.com.cookieFile
+13:56:07.699794 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:07.711970 git.c:463               trace: built-in: git config --null --type=path http.cookieFile
+13:56:08.240463 http.c:845              == Info: processing: https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/refs?service=git-receive-pack
+13:56:08.240463 http.c:845              == Info: Found bundle for host: 0x1c7bf59c390 [can multiplex]
+13:56:08.240463 http.c:845              == Info: Re-using existing connection with proxy wgbipusr.dmz.standardlife.com
+13:56:08.240463 http.c:845              == Info: Server auth using Basic with user 'CO69748_PGH'
+13:56:08.240463 http.c:845              == Info: h2 [:method: GET]
+13:56:08.240463 http.c:845              == Info: h2 [:scheme: https]
+13:56:08.240463 http.c:845              == Info: h2 [:authority: github.com]
+13:56:08.240463 http.c:845              == Info: h2 [:path: /The-Phoenix-Group/oracle-finance-oac.git/info/refs?service=git-receive-pack]
+13:56:08.240463 http.c:845              == Info: h2 [authorization: Basic <redacted>]
+13:56:08.240463 http.c:845              == Info: h2 [user-agent: git/2.42.0.windows.2]
+13:56:08.240463 http.c:845              == Info: h2 [accept: */*]
+13:56:08.240463 http.c:845              == Info: h2 [accept-encoding: deflate, gzip, br, zstd]
+13:56:08.240463 http.c:845              == Info: h2 [pragma: no-cache]
+13:56:08.240463 http.c:845              == Info: Using Stream ID: 3
+13:56:08.240463 http.c:792              => Send header, 0000000311 bytes (0x00000137)
+13:56:08.240463 http.c:804              => Send header: GET /The-Phoenix-Group/oracle-finance-oac.git/info/refs?service=git-receive-pack HTTP/2
+13:56:08.240463 http.c:804              => Send header: Host: github.com
+13:56:08.240463 http.c:804              => Send header: Authorization: Basic <redacted>
+13:56:08.240463 http.c:804              => Send header: User-Agent: git/2.42.0.windows.2
+13:56:08.240463 http.c:804              => Send header: Accept: */*
+13:56:08.240463 http.c:804              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+13:56:08.240463 http.c:804              => Send header: Pragma: no-cache
+13:56:08.240463 http.c:804              => Send header:
+13:56:08.520429 http.c:792              <= Recv header, 0000000013 bytes (0x0000000d)
+13:56:08.520429 http.c:804              <= Recv header: HTTP/2 200
+13:56:08.520429 http.c:792              <= Recv header, 0000000026 bytes (0x0000001a)
+13:56:08.520429 http.c:804              <= Recv header: server: GitHub-Babel/3.0
+13:56:08.520429 http.c:792              <= Recv header, 0000000060 bytes (0x0000003c)
+13:56:08.520429 http.c:804              <= Recv header: content-type: application/x-git-receive-pack-advertisement
+13:56:08.520429 http.c:792              <= Recv header, 0000000054 bytes (0x00000036)
+13:56:08.520429 http.c:804              <= Recv header: content-security-policy: default-src 'none'; sandbox
+13:56:08.520429 http.c:792              <= Recv header, 0000000040 bytes (0x00000028)
+13:56:08.520429 http.c:804              <= Recv header: expires: Fri, 01 Jan 1980 00:00:00 GMT
+13:56:08.520429 http.c:792              <= Recv header, 0000000018 bytes (0x00000012)
+13:56:08.520429 http.c:804              <= Recv header: pragma: no-cache
+13:56:08.520429 http.c:792              <= Recv header, 0000000053 bytes (0x00000035)
+13:56:08.520429 http.c:804              <= Recv header: cache-control: no-cache, max-age=0, must-revalidate
+13:56:08.520429 http.c:792              <= Recv header, 0000000023 bytes (0x00000017)
+13:56:08.520429 http.c:804              <= Recv header: vary: Accept-Encoding
+13:56:08.520429 http.c:792              <= Recv header, 0000000037 bytes (0x00000025)
+13:56:08.520429 http.c:804              <= Recv header: date: Tue, 02 Jul 2024 12:56:08 GMT
+13:56:08.520429 http.c:792              <= Recv header, 0000000023 bytes (0x00000017)
+13:56:08.520429 http.c:804              <= Recv header: x-frame-options: DENY
+13:56:08.520429 http.c:792              <= Recv header, 0000000056 bytes (0x00000038)
+13:56:08.520429 http.c:804              <= Recv header: x-github-request-id: 6C58:639C0:801412:8ED7C7:6683F8E1
+13:56:08.520429 http.c:792              <= Recv header, 0000000002 bytes (0x00000002)
+13:56:08.520429 http.c:804              <= Recv header:
+13:56:08.520429 http.c:845              == Info: Connection #0 to host wgbipusr.dmz.standardlife.com left intact
+13:56:08.520429 run-command.c:659       trace: run_command: 'git credential-manager store'
+13:56:08.617773 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:08.635447 git.c:749               trace: exec: git-credential-manager store
+13:56:08.636446 run-command.c:659       trace: run_command: git-credential-manager store
+13:56:08.765148 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:08.774759 git.c:463               trace: built-in: git config --null --list
+13:56:08.947203 run-command.c:659       trace: run_command: 'git credential-Advanced store'
+13:56:09.037899 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:09.050041 git.c:749               trace: exec: git-credential-Advanced store
+13:56:09.050041 run-command.c:659       trace: run_command: git-credential-Advanced store
+git: 'credential-Advanced' is not a git command. See 'git --help'.
+13:56:09.122830 run-command.c:659       trace: run_command: .git/hooks/pre-push origin https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:09.258389 exec-cmd.c:244          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+13:56:09.271549 git.c:749               trace: exec: git-lfs pre-push origin https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:09.271549 run-command.c:659       trace: run_command: git-lfs pre-push origin https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:09.415673 trace git-lfs: exec: git 'version'
+13:56:09.498972 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'remote' '-v'
+13:56:09.569157 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'remote'
+13:56:09.667025 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'rev-parse' 'HEAD' '--symbolic-full-name' 'HEAD'
+13:56:09.760065 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'rev-parse' '--git-dir' '--show-toplevel'
+13:56:09.899300 trace git-lfs: exec: uname
+13:56:09.981298 trace git-lfs: exec: git 'config' '--includes' '-l'
+13:56:10.039306 trace git-lfs: exec: git 'rev-parse' '--is-bare-repository'
+13:56:10.091744 trace git-lfs: exec: git 'config' '--includes' '-l' '--blob' ':.lfsconfig'
+13:56:10.144158 trace git-lfs: exec: git 'config' '--includes' '-l' '--blob' 'HEAD:.lfsconfig'
+13:56:10.214657 trace git-lfs: pre-push: refs/heads/feature/test/yml e79461e80678378193b08978bbcbe3f10094a2f8 refs/heads/feature/test/yml 78263113e00c3be16e9c3dc001670477ac994db3
+13:56:10.215707 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'show-ref'
+13:56:10.282144 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'ls-remote' '--heads' '--tags' '-q' 'origin'
+13:56:18.422495 trace git-lfs: creds: git credential fill ("https", "github.com", "")
+13:56:18.424853 trace git-lfs: exec: git 'credential' 'fill'
+13:56:18.886809 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:18.891508 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/locks/verify
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/locks/verify HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 46
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"ref":{"name":"refs/heads/feature/test/yml"}}13:56:19.359788 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Content-Length: 41
+< Content-Type: application/vnd.git-lfs+json
+< Date: Tue, 02 Jul 2024 12:56:19 GMT
+< X-Frame-Options: DENY
+< X-Github-Request-Id: 8A7C:6B643:7F1535:8DE3DC:6683F8F3
+<
+13:56:19.360438 trace git-lfs: creds: git credential approve ("https", "github.com", "")
+13:56:19.361488 trace git-lfs: exec: git 'credential' 'approve'
+git: 'credential-Advanced' is not a git command. See 'git --help'.
+13:56:20.015321 trace git-lfs: HTTP: {"ours":[],"theirs":[],"next_cursor":""}
+
+{"ours":[],"theirs":[],"next_cursor":""}
+13:56:20.017018 trace git-lfs: tq: running as batched queue, batch size of 100
+13:56:20.018411 trace git-lfs: run_command: git rev-list --objects --ignore-missing --stdin --
+13:56:20.018411 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'rev-list' '--objects' '--ignore-missing' '--stdin' '--'
+13:56:20.024635 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'cat-file' '--batch-check'
+13:56:20.031917 trace git-lfs: exec: git '-c' 'filter.lfs.smudge=' '-c' 'filter.lfs.clean=' '-c' 'filter.lfs.process=' '-c' 'filter.lfs.required=false' 'rev-parse' '--git-common-dir'
+13:56:20.134519 trace git-lfs: tq: sending batch of size 1
+13:56:20.135029 trace git-lfs: api: batch 1 files
+13:56:20.135349 trace git-lfs: creds: git credential cache ("https", "github.com", "")
+13:56:20.135349 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:20.135349 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 242
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"operation":"upload","objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238}],"transfers":["lfs-standalone-file","basic","ssh"],"ref":{"name":"refs/heads/feature/test/yml"},"hash_algo":"sha256"}13:56:20.453986 trace git-lfs: http: decompressed gzipped response
+13:56:20.456598 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+< Cache-Control: private, max-age=60, s-maxage=60
+< Content-Security-Policy: default-src 'none'
+< Content-Type: application/json; charset=utf-8
+< Date: Tue, 02 Jul 2024 12:56:20 GMT
+< Etag: W/"3c1246d69b05e482536599772479584c18d9f1ec666d790551ee104589a2c469"
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Server: istio-envoy
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+< X-Accepted-Oauth-Scopes:
+< X-Content-Type-Options: nosniff
+< X-Envoy-Upstream-Service-Time: 187
+< X-Frame-Options: deny
+< X-Github-Api-Version-Selected: 2022-11-28
+< X-Github-Media-Type: unknown
+< X-Github-Request-Id: 8A7C:6B643:7F161D:8DE4E7:6683F8F3
+< X-Oauth-Client-Id: 0120e057bd645470c1ed
+< X-Oauth-Scopes: gist, repo, workflow
+< X-Ratelimit-Limit: 3000
+< X-Ratelimit-Remaining: 2999
+< X-Ratelimit-Reset: 1719925040
+< X-Ratelimit-Resource: lfs
+< X-Ratelimit-Used: 1
+< X-Xss-Protection: 0
+<
+13:56:20.456598 trace git-lfs: HTTP: {"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=7d7888db61a4b4e2fbb240f58561
+{"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=7d7888db61a4b4e2fbb240f5856113:56:20.457118 trace git-lfs: HTTP: 2cfee8404788114d504d2f7422f4a4262961","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125620Z"},"expires_at":"2024-07-02T13:11:20Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CYHcYHtCuYrVH0CKBNMR0AF1DHTftRxuFTIIcY9-ijxRJLOZoVKdIKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}
+2cfee8404788114d504d2f7422f4a4262961","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125620Z"},"expires_at":"2024-07-02T13:11:20Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CYHcYHtCuYrVH0CKBNMR0AF1DHTftRxuFTIIcY9-ijxRJLOZoVKdIKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}13:56:20.457172 trace git-lfs: tq: starting transfer adapter "basic"
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" Begin() with 8 workers
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" started
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 1 starting
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 2 starting
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 0 starting
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 1 waiting for Auth
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 2 waiting for Auth
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 4 starting
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 4 waiting for Auth
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 5 starting
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 5 waiting for Auth
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 7 starting
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 7 waiting for Auth
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 3 starting
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 3 waiting for Auth
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 6 starting
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 6 waiting for Auth
+13:56:20.457172 trace git-lfs: xfer: adapter "basic" worker 0 processing job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:20.469663 trace git-lfs: HTTP: PUT https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> PUT /alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366 HTTP/1.1
+> Host: github-cloud.s3.amazonaws.com
+> Authorization: AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=7d7888db61a4b4e2fbb240f585612cfee8404788114d504d2f7422f4a4262961
+> Content-Length: 179312238
+> Content-Type: application/octet-stream
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+> X-Amz-Content-Sha256: e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> X-Amz-Date: 20240702T125620Z
+>
+13:56:20.533162 trace git-lfs: xfer: adapter "basic" worker 0 finished job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:20.533162 trace git-lfs: tq: retrying object e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288: LFS: Put "https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366": authenticationrequired
+13:56:20.533162 trace git-lfs: tq: enqueue retry #1 after 0.25s for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288" (size: 179312238)
+13:56:20.793955 trace git-lfs: tq: sending batch of size 1
+13:56:20.793955 trace git-lfs: api: batch 1 files
+13:56:20.793955 trace git-lfs: creds: git credential cache ("https", "github.com", "")
+13:56:20.793955 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:20.793955 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 242
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"operation":"upload","objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238}],"transfers":["basic","ssh","lfs-standalone-file"],"ref":{"name":"refs/heads/feature/test/yml"},"hash_algo":"sha256"}13:56:21.093987 trace git-lfs: http: decompressed gzipped response
+13:56:21.108420 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+< Cache-Control: private, max-age=60, s-maxage=60
+< Content-Security-Policy: default-src 'none'
+< Content-Type: application/json; charset=utf-8
+< Date: Tue, 02 Jul 2024 12:56:21 GMT
+< Etag: W/"7cf7039f9d6e7810d982b19e12f8cffc778a008ec326cf31859e67a6465b8404"
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Server: istio-envoy
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+< X-Accepted-Oauth-Scopes:
+< X-Content-Type-Options: nosniff
+< X-Envoy-Decorator-Operation: unicorn-api.github-production.svc.cluster.local:80/*
+< X-Envoy-Upstream-Service-Time: 171
+< X-Frame-Options: deny
+< X-Github-Api-Version-Selected: 2022-11-28
+< X-Github-Media-Type: unknown
+< X-Github-Request-Id: 8A7C:6B643:7F16A8:8DE551:6683F8F4
+< X-Oauth-Client-Id: 0120e057bd645470c1ed
+< X-Oauth-Scopes: gist, repo, workflow
+< X-Ratelimit-Limit: 3000
+< X-Ratelimit-Remaining: 2998
+< X-Ratelimit-Reset: 1719925040
+< X-Ratelimit-Resource: lfs
+< X-Ratelimit-Used: 2
+< X-Xss-Protection: 0
+<
+13:56:21.108420 trace git-lfs: HTTP: {"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=87f21ce813340529e69a067f58ff
+{"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=87f21ce813340529e69a067f58ff13:56:21.109122 trace git-lfs: HTTP: a8ca9e3785ac78b21e3b693f32af83a07aa9","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125621Z"},"expires_at":"2024-07-02T13:11:21Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CaECIyU8CiQg9wmqfS90SZt0dpnnCoiGOLw3Q_FteaPK5LOZoVKdYKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}
+a8ca9e3785ac78b21e3b693f32af83a07aa9","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125621Z"},"expires_at":"2024-07-02T13:11:21Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CaECIyU8CiQg9wmqfS90SZt0dpnnCoiGOLw3Q_FteaPK5LOZoVKdYKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}13:56:21.109122 trace git-lfs: xfer: adapter "basic" End()
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 0 stopping
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 6 auth signal received
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 6 stopping
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 5 auth signal received
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 5 stopping
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 1 auth signal received
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 1 stopping
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 7 auth signal received
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 7 stopping
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 2 auth signal received
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 4 auth signal received
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 4 stopping
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 3 auth signal received
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 3 stopping
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 2 stopping
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" stopped
+13:56:21.109122 trace git-lfs: tq: starting transfer adapter "basic"
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" Begin() with 8 workers
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" started
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 2 starting
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 2 waiting for Auth
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 0 starting
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 3 starting
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 1 starting
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 1 waiting for Auth
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 4 starting
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 7 starting
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 7 waiting for Auth
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 3 waiting for Auth
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 4 waiting for Auth
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 5 starting
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 5 waiting for Auth
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 6 starting
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 6 waiting for Auth
+13:56:21.109122 trace git-lfs: xfer: adapter "basic" worker 0 processing job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:21.110172 trace git-lfs: HTTP: PUT https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> PUT /alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366 HTTP/1.1
+> Host: github-cloud.s3.amazonaws.com
+> Authorization: AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=87f21ce813340529e69a067f58ffa8ca9e3785ac78b21e3b693f32af83a07aa9
+> Content-Length: 179312238
+> Content-Type: application/octet-stream
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+> X-Amz-Content-Sha256: e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> X-Amz-Date: 20240702T125621Z
+>
+13:56:21.120364 trace git-lfs: xfer: adapter "basic" worker 0 finished job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:21.120364 trace git-lfs: tq: retrying object e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288: LFS: Put "https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366": authenticationrequired
+13:56:21.120364 trace git-lfs: tq: enqueue retry #2 after 0.50s for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288" (size: 179312238)
+13:56:21.624746 trace git-lfs: tq: sending batch of size 1
+13:56:21.624746 trace git-lfs: api: batch 1 files
+13:56:21.624746 trace git-lfs: creds: git credential cache ("https", "github.com", "")
+13:56:21.624746 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:21.624746 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 242
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"operation":"upload","objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238}],"transfers":["lfs-standalone-file","basic","ssh"],"ref":{"name":"refs/heads/feature/test/yml"},"hash_algo":"sha256"}13:56:21.909528 trace git-lfs: http: decompressed gzipped response
+13:56:21.910456 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+< Cache-Control: private, max-age=60, s-maxage=60
+< Content-Security-Policy: default-src 'none'
+< Content-Type: application/json; charset=utf-8
+< Date: Tue, 02 Jul 2024 12:56:21 GMT
+< Etag: W/"7cf7039f9d6e7810d982b19e12f8cffc778a008ec326cf31859e67a6465b8404"
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Server: istio-envoy
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+< X-Accepted-Oauth-Scopes:
+< X-Content-Type-Options: nosniff
+< X-Envoy-Upstream-Service-Time: 152
+< X-Frame-Options: deny
+< X-Github-Api-Version-Selected: 2022-11-28
+< X-Github-Media-Type: unknown
+< X-Github-Request-Id: 8A7C:6B643:7F1728:8DE5ED:6683F8F5
+< X-Oauth-Client-Id: 0120e057bd645470c1ed
+< X-Oauth-Scopes: gist, repo, workflow
+< X-Ratelimit-Limit: 3000
+< X-Ratelimit-Remaining: 2997
+< X-Ratelimit-Reset: 1719925040
+< X-Ratelimit-Resource: lfs
+< X-Ratelimit-Used: 3
+< X-Xss-Protection: 0
+<
+13:56:21.910456 trace git-lfs: HTTP: {"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=87f21ce813340529e69a067f58ff
+{"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=87f21ce813340529e69a067f58ff13:56:21.910456 trace git-lfs: HTTP: a8ca9e3785ac78b21e3b693f32af83a07aa9","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125621Z"},"expires_at":"2024-07-02T13:11:21Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CaECIyU8CiQg9wmqfS90SZt0dpnnCoiGOLw3Q_FteaPK5LOZoVKdYKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}
+a8ca9e3785ac78b21e3b693f32af83a07aa9","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125621Z"},"expires_at":"2024-07-02T13:11:21Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CaECIyU8CiQg9wmqfS90SZt0dpnnCoiGOLw3Q_FteaPK5LOZoVKdYKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}13:56:21.910456 trace git-lfs: xfer: adapter "basic" End()
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 0 stopping
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 6 auth signal received
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 6 stopping
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 3 auth signal received
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 3 stopping
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 7 auth signal received
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 2 auth signal received
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 2 stopping
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 1 auth signal received
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 1 stopping
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 4 auth signal received
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 4 stopping
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 5 auth signal received
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 7 stopping
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 5 stopping
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" stopped
+13:56:21.910456 trace git-lfs: tq: starting transfer adapter "basic"
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" Begin() with 8 workers
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" started
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 3 starting
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 5 starting
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 0 starting
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 4 starting
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 1 starting
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 1 waiting for Auth
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 6 starting
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 7 starting
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 7 waiting for Auth
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 4 waiting for Auth
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 5 waiting for Auth
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 2 starting
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 2 waiting for Auth
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 6 waiting for Auth
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 3 waiting for Auth
+13:56:21.910456 trace git-lfs: xfer: adapter "basic" worker 0 processing job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:21.911504 trace git-lfs: HTTP: PUT https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> PUT /alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366 HTTP/1.1
+> Host: github-cloud.s3.amazonaws.com
+> Authorization: AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=87f21ce813340529e69a067f58ffa8ca9e3785ac78b21e3b693f32af83a07aa9
+> Content-Length: 179312238
+> Content-Type: application/octet-stream
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+> X-Amz-Content-Sha256: e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> X-Amz-Date: 20240702T125621Z
+>
+13:56:21.921624 trace git-lfs: xfer: adapter "basic" worker 0 finished job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:21.921624 trace git-lfs: tq: retrying object e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288: LFS: Put "https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366": authenticationrequired
+13:56:21.921624 trace git-lfs: tq: enqueue retry #3 after 1.00s for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288" (size: 179312238)
+13:56:22.925025 trace git-lfs: tq: sending batch of size 1
+13:56:22.925176 trace git-lfs: api: batch 1 files
+13:56:22.925176 trace git-lfs: creds: git credential cache ("https", "github.com", "")
+13:56:22.925176 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:22.925176 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 242
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"operation":"upload","objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238}],"transfers":["lfs-standalone-file","basic","ssh"],"ref":{"name":"refs/heads/feature/test/yml"},"hash_algo":"sha256"}13:56:23.195249 trace git-lfs: http: decompressed gzipped response
+13:56:23.209860 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+< Cache-Control: private, max-age=60, s-maxage=60
+< Content-Security-Policy: default-src 'none'
+< Content-Type: application/json; charset=utf-8
+< Date: Tue, 02 Jul 2024 12:56:23 GMT
+< Etag: W/"a8a840c3e4236bac02ae2de3b68ed05e7f3b853af90fed4b9f19b4483733889e"
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Server: istio-envoy
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+< X-Accepted-Oauth-Scopes:
+< X-Content-Type-Options: nosniff
+< X-Envoy-Upstream-Service-Time: 158
+< X-Frame-Options: deny
+< X-Github-Api-Version-Selected: 2022-11-28
+< X-Github-Media-Type: unknown
+< X-Github-Request-Id: 8A7C:6B643:7F181F:8DE6FF:6683F8F5
+< X-Oauth-Client-Id: 0120e057bd645470c1ed
+< X-Oauth-Scopes: gist, repo, workflow
+< X-Ratelimit-Limit: 3000
+< X-Ratelimit-Remaining: 2996
+< X-Ratelimit-Reset: 1719925040
+< X-Ratelimit-Resource: lfs
+< X-Ratelimit-Used: 4
+< X-Xss-Protection: 0
+<
+13:56:23.209860 trace git-lfs: HTTP: {"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=11640f5a63eaebbc9b5b3a1f3c46
+{"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=11640f5a63eaebbc9b5b3a1f3c4613:56:23.209860 trace git-lfs: HTTP: c39194db1e2b22d3cf924dac209b918e77bb","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125623Z"},"expires_at":"2024-07-02T13:11:23Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CY6r3gD0O9VhLgSvr6uiv5j8fnXXzMbYi2DrDLNY8vT75LOZoVKd4KmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}
+c39194db1e2b22d3cf924dac209b918e77bb","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125623Z"},"expires_at":"2024-07-02T13:11:23Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CY6r3gD0O9VhLgSvr6uiv5j8fnXXzMbYi2DrDLNY8vT75LOZoVKd4KmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}13:56:23.209860 trace git-lfs: xfer: adapter "basic" End()
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 0 stopping
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 3 auth signal received
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 3 stopping
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 1 auth signal received
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 1 stopping
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 7 auth signal received
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 7 stopping
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 2 auth signal received
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 2 stopping
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 4 auth signal received
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 4 stopping
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 5 auth signal received
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 5 stopping
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 6 auth signal received
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 6 stopping
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" stopped
+13:56:23.209860 trace git-lfs: tq: starting transfer adapter "basic"
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" Begin() with 8 workers
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" started
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 5 starting
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 5 waiting for Auth
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 1 starting
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 1 waiting for Auth
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 4 starting
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 4 waiting for Auth
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 3 starting
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 3 waiting for Auth
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 7 starting
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 2 starting
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 2 waiting for Auth
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 6 starting
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 6 waiting for Auth
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 0 starting
+13:56:23.209860 trace git-lfs: xfer: adapter "basic" worker 7 waiting for Auth
+13:56:23.210394 trace git-lfs: xfer: adapter "basic" worker 0 processing job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:23.211445 trace git-lfs: HTTP: PUT https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> PUT /alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366 HTTP/1.1
+> Host: github-cloud.s3.amazonaws.com
+> Authorization: AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=11640f5a63eaebbc9b5b3a1f3c46c39194db1e2b22d3cf924dac209b918e77bb
+> Content-Length: 179312238
+> Content-Type: application/octet-stream
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+> X-Amz-Content-Sha256: e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> X-Amz-Date: 20240702T125623Z
+>
+13:56:23.220719 trace git-lfs: xfer: adapter "basic" worker 0 finished job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:23.220719 trace git-lfs: tq: retrying object e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288: LFS: Put "https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366": authenticationrequired
+13:56:23.220719 trace git-lfs: tq: enqueue retry #4 after 2.00s for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288" (size: 179312238)
+13:56:25.227486 trace git-lfs: tq: sending batch of size 1
+13:56:25.227486 trace git-lfs: api: batch 1 files
+13:56:25.227486 trace git-lfs: creds: git credential cache ("https", "github.com", "")
+13:56:25.227486 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:25.227486 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 242
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"operation":"upload","objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238}],"transfers":["lfs-standalone-file","basic","ssh"],"ref":{"name":"refs/heads/feature/test/yml"},"hash_algo":"sha256"}13:56:25.542853 trace git-lfs: http: decompressed gzipped response
+13:56:25.545810 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+< Cache-Control: private, max-age=60, s-maxage=60
+< Content-Security-Policy: default-src 'none'
+< Content-Type: application/json; charset=utf-8
+< Date: Tue, 02 Jul 2024 12:56:25 GMT
+< Etag: W/"d3416b47794e53f44abecde6d7fc1bca4db2f413c269a7e84e37070ea2fb5b1a"
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Server: istio-envoy
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+< X-Accepted-Oauth-Scopes:
+< X-Content-Type-Options: nosniff
+< X-Envoy-Upstream-Service-Time: 193
+< X-Frame-Options: deny
+< X-Github-Api-Version-Selected: 2022-11-28
+< X-Github-Media-Type: unknown
+< X-Github-Request-Id: 8A7C:6B643:7F1993:8DE899:6683F8F7
+< X-Oauth-Client-Id: 0120e057bd645470c1ed
+< X-Oauth-Scopes: gist, repo, workflow
+< X-Ratelimit-Limit: 3000
+< X-Ratelimit-Remaining: 2995
+< X-Ratelimit-Reset: 1719925040
+< X-Ratelimit-Resource: lfs
+< X-Ratelimit-Used: 5
+< X-Xss-Protection: 0
+<
+13:56:25.545810 trace git-lfs: HTTP: {"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=dfd68013e40ab64ccef04b731555
+{"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=dfd68013e40ab64ccef04b73155513:56:25.545810 trace git-lfs: HTTP: 144ec42e980243c1af1c451bb570aaff87e4","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125625Z"},"expires_at":"2024-07-02T13:11:25Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CZBYsq8wx0rIMV6pAzpcJK1cxY-yt7a3OzsvnHeAJCX4pLOZoVKeYKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}
+144ec42e980243c1af1c451bb570aaff87e4","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125625Z"},"expires_at":"2024-07-02T13:11:25Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CZBYsq8wx0rIMV6pAzpcJK1cxY-yt7a3OzsvnHeAJCX4pLOZoVKeYKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}13:56:25.545810 trace git-lfs: xfer: adapter "basic" End()
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 0 stopping
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 7 auth signal received
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 7 stopping
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 3 auth signal received
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 3 stopping
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 2 auth signal received
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 2 stopping
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 4 auth signal received
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 5 auth signal received
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 5 stopping
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 6 auth signal received
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 6 stopping
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 4 stopping
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 1 auth signal received
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 1 stopping
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" stopped
+13:56:25.545810 trace git-lfs: tq: starting transfer adapter "basic"
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" Begin() with 8 workers
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" started
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 3 starting
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 3 waiting for Auth
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 0 starting
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 1 starting
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 1 waiting for Auth
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 2 starting
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 2 waiting for Auth
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 5 starting
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 5 waiting for Auth
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 4 starting
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 4 waiting for Auth
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 6 starting
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 6 waiting for Auth
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 7 starting
+13:56:25.545810 trace git-lfs: xfer: adapter "basic" worker 7 waiting for Auth
+13:56:25.546347 trace git-lfs: xfer: adapter "basic" worker 0 processing job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:25.547404 trace git-lfs: HTTP: PUT https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> PUT /alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366 HTTP/1.1
+> Host: github-cloud.s3.amazonaws.com
+> Authorization: AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=dfd68013e40ab64ccef04b731555144ec42e980243c1af1c451bb570aaff87e4
+> Content-Length: 179312238
+> Content-Type: application/octet-stream
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+> X-Amz-Content-Sha256: e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> X-Amz-Date: 20240702T125625Z
+>
+13:56:25.560503 trace git-lfs: xfer: adapter "basic" worker 0 finished job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:25.560503 trace git-lfs: tq: retrying object e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288: LFS: Put "https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366": authenticationrequired
+13:56:25.560503 trace git-lfs: tq: enqueue retry #5 after 4.00s for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288" (size: 179312238)
+13:56:29.560825 trace git-lfs: tq: sending batch of size 1
+13:56:29.561115 trace git-lfs: api: batch 1 files
+13:56:29.561115 trace git-lfs: creds: git credential cache ("https", "github.com", "")
+13:56:29.561115 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:29.561115 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 242
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"operation":"upload","objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238}],"transfers":["lfs-standalone-file","basic","ssh"],"ref":{"name":"refs/heads/feature/test/yml"},"hash_algo":"sha256"}13:56:29.815914 trace git-lfs: http: decompressed gzipped response
+13:56:29.826277 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+< Cache-Control: private, max-age=60, s-maxage=60
+< Content-Security-Policy: default-src 'none'
+< Content-Type: application/json; charset=utf-8
+< Date: Tue, 02 Jul 2024 12:56:29 GMT
+< Etag: W/"84da035209f5a100badacc10de25acaa9bc48a24b178607ad9013f556f10dbe2"
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Server: istio-envoy
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+< X-Accepted-Oauth-Scopes:
+< X-Content-Type-Options: nosniff
+< X-Envoy-Upstream-Service-Time: 134
+< X-Frame-Options: deny
+< X-Github-Api-Version-Selected: 2022-11-28
+< X-Github-Media-Type: unknown
+< X-Github-Request-Id: 8A7C:6B643:7F1CC0:8DEBFD:6683F8F9
+< X-Oauth-Client-Id: 0120e057bd645470c1ed
+< X-Oauth-Scopes: gist, repo, workflow
+< X-Ratelimit-Limit: 3000
+< X-Ratelimit-Remaining: 2994
+< X-Ratelimit-Reset: 1719925040
+< X-Ratelimit-Resource: lfs
+< X-Ratelimit-Used: 6
+< X-Xss-Protection: 0
+<
+13:56:29.826277 trace git-lfs: HTTP: {"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=1b3a0631a32946cff66f940932b5
+{"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=1b3a0631a32946cff66f940932b513:56:29.826277 trace git-lfs: HTTP: 0b3e8ef84e61ff0d241260371a495e392200","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125629Z"},"expires_at":"2024-07-02T13:11:29Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CYQTidE1vzQ-xyfXPY5B0KlByr2LkpBWUJ7x4_mJ7qTsZLOZoVKfYKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}
+0b3e8ef84e61ff0d241260371a495e392200","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125629Z"},"expires_at":"2024-07-02T13:11:29Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CYQTidE1vzQ-xyfXPY5B0KlByr2LkpBWUJ7x4_mJ7qTsZLOZoVKfYKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}13:56:29.826277 trace git-lfs: xfer: adapter "basic" End()
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 0 stopping
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 7 auth signal received
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 7 stopping
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 5 auth signal received
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 5 stopping
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 4 auth signal received
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 4 stopping
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 3 auth signal received
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 2 auth signal received
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 2 stopping
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 3 stopping
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 1 auth signal received
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 1 stopping
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 6 auth signal received
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 6 stopping
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" stopped
+13:56:29.826277 trace git-lfs: tq: starting transfer adapter "basic"
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" Begin() with 8 workers
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" started
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 3 starting
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 3 waiting for Auth
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 1 starting
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 1 waiting for Auth
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 5 starting
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 0 starting
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 6 starting
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 6 waiting for Auth
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 5 waiting for Auth
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 7 starting
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 7 waiting for Auth
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 4 starting
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 4 waiting for Auth
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 2 starting
+13:56:29.826277 trace git-lfs: xfer: adapter "basic" worker 2 waiting for Auth
+13:56:29.826804 trace git-lfs: xfer: adapter "basic" worker 0 processing job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:29.827864 trace git-lfs: HTTP: PUT https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> PUT /alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366 HTTP/1.1
+> Host: github-cloud.s3.amazonaws.com
+> Authorization: AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=1b3a0631a32946cff66f940932b50b3e8ef84e61ff0d241260371a495e392200
+> Content-Length: 179312238
+> Content-Type: application/octet-stream
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+> X-Amz-Content-Sha256: e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> X-Amz-Date: 20240702T125629Z
+>
+13:56:29.850476 trace git-lfs: xfer: adapter "basic" worker 0 finished job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:29.850476 trace git-lfs: tq: retrying object e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288: LFS: Put "https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366": authenticationrequired
+13:56:29.850476 trace git-lfs: tq: enqueue retry #6 after 8.00s for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288" (size: 179312238)
+13:56:37.865023 trace git-lfs: tq: sending batch of size 1
+13:56:37.865023 trace git-lfs: api: batch 1 files
+13:56:37.865309 trace git-lfs: creds: git credential cache ("https", "github.com", "")
+13:56:37.865309 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:37.865309 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 242
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"operation":"upload","objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238}],"transfers":["lfs-standalone-file","basic","ssh"],"ref":{"name":"refs/heads/feature/test/yml"},"hash_algo":"sha256"}13:56:38.120390 trace git-lfs: http: decompressed gzipped response
+13:56:38.129464 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+< Cache-Control: private, max-age=60, s-maxage=60
+< Content-Security-Policy: default-src 'none'
+< Content-Type: application/json; charset=utf-8
+< Date: Tue, 02 Jul 2024 12:56:38 GMT
+< Etag: W/"49387285445e56aff1bf3cf27faaae9bcad1243ef2e00de68d0262e0bab2385d"
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Server: istio-envoy
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+< X-Accepted-Oauth-Scopes:
+< X-Content-Type-Options: nosniff
+< X-Envoy-Upstream-Service-Time: 145
+< X-Frame-Options: deny
+< X-Github-Api-Version-Selected: 2022-11-28
+< X-Github-Media-Type: unknown
+< X-Github-Request-Id: 8A7C:6B643:7F234E:8DF313:6683F8FD
+< X-Oauth-Client-Id: 0120e057bd645470c1ed
+< X-Oauth-Scopes: gist, repo, workflow
+< X-Ratelimit-Limit: 3000
+< X-Ratelimit-Remaining: 2993
+< X-Ratelimit-Reset: 1719925040
+< X-Ratelimit-Resource: lfs
+< X-Ratelimit-Used: 7
+< X-Xss-Protection: 0
+<
+13:56:38.129464 trace git-lfs: HTTP: {"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=60a0c5181bd5eec7678db1e777a5
+{"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=60a0c5181bd5eec7678db1e777a513:56:38.129464 trace git-lfs: HTTP: ca26d845769d3ea76e61c84d0bc01e05407c","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125638Z"},"expires_at":"2024-07-02T13:11:38Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CY0V1SHTltkoetDuaeoHDQM0XTLbME5_84aR7SPeXy3rpLOZoVKhoKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}
+ca26d845769d3ea76e61c84d0bc01e05407c","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125638Z"},"expires_at":"2024-07-02T13:11:38Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CY0V1SHTltkoetDuaeoHDQM0XTLbME5_84aR7SPeXy3rpLOZoVKhoKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}13:56:38.130557 trace git-lfs: xfer: adapter "basic" End()
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 0 stopping
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 2 auth signal received
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 2 stopping
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 5 auth signal received
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 5 stopping
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 6 auth signal received
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 6 stopping
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 4 auth signal received
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 4 stopping
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 3 auth signal received
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 3 stopping
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 7 auth signal received
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 1 auth signal received
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 1 stopping
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 7 stopping
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" stopped
+13:56:38.130557 trace git-lfs: tq: starting transfer adapter "basic"
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" Begin() with 8 workers
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 0 starting
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 1 starting
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 7 starting
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 7 waiting for Auth
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 4 starting
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 4 waiting for Auth
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 5 starting
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 5 waiting for Auth
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 1 waiting for Auth
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 6 starting
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 6 waiting for Auth
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" started
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 3 starting
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 3 waiting for Auth
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 2 starting
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 2 waiting for Auth
+13:56:38.130557 trace git-lfs: xfer: adapter "basic" worker 0 processing job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:38.131718 trace git-lfs: HTTP: PUT https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> PUT /alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366 HTTP/1.1
+> Host: github-cloud.s3.amazonaws.com
+> Authorization: AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=60a0c5181bd5eec7678db1e777a5ca26d845769d3ea76e61c84d0bc01e05407c
+> Content-Length: 179312238
+> Content-Type: application/octet-stream
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+> X-Amz-Content-Sha256: e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> X-Amz-Date: 20240702T125638Z
+>
+13:56:38.153954 trace git-lfs: xfer: adapter "basic" worker 0 finished job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:38.153954 trace git-lfs: tq: retrying object e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288: LFS: Put "https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366": authenticationrequired
+13:56:38.153954 trace git-lfs: tq: enqueue retry #7 after 10.00s for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288" (size: 179312238)
+13:56:48.157608 trace git-lfs: tq: sending batch of size 1
+13:56:48.157821 trace git-lfs: api: batch 1 files
+13:56:48.157821 trace git-lfs: creds: git credential cache ("https", "github.com", "")
+13:56:48.157821 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:48.157821 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 242
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"operation":"upload","objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238}],"transfers":["lfs-standalone-file","basic","ssh"],"ref":{"name":"refs/heads/feature/test/yml"},"hash_algo":"sha256"}13:56:48.472972 trace git-lfs: http: decompressed gzipped response
+13:56:48.473629 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+< Cache-Control: private, max-age=60, s-maxage=60
+< Content-Security-Policy: default-src 'none'
+< Content-Type: application/json; charset=utf-8
+< Date: Tue, 02 Jul 2024 12:56:48 GMT
+< Etag: W/"6d6e5c9e7b0ef977c97a8b189de6d9651fcbd6a651f4f7031573ee71bb1894e6"
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Server: istio-envoy
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+< X-Accepted-Oauth-Scopes:
+< X-Content-Type-Options: nosniff
+< X-Envoy-Upstream-Service-Time: 176
+< X-Frame-Options: deny
+< X-Github-Api-Version-Selected: 2022-11-28
+< X-Github-Media-Type: unknown
+< X-Github-Request-Id: 8A7C:6B643:7F2AFF:8DFB4C:6683F906
+< X-Oauth-Client-Id: 0120e057bd645470c1ed
+< X-Oauth-Scopes: gist, repo, workflow
+< X-Ratelimit-Limit: 3000
+< X-Ratelimit-Remaining: 2992
+< X-Ratelimit-Reset: 1719925040
+< X-Ratelimit-Resource: lfs
+< X-Ratelimit-Used: 8
+< X-Xss-Protection: 0
+<
+13:56:48.473629 trace git-lfs: HTTP: {"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=a0605b58e0de9efbd9d813e56d79
+{"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=a0605b58e0de9efbd9d813e56d7913:56:48.473629 trace git-lfs: HTTP: d426d6c752f5190f104962e8d23d21d75682","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125648Z"},"expires_at":"2024-07-02T13:11:48Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CZ2L35un7PoQkvEgGamzARQLRYSAYZ7eFTmSnoFOw6f9pLOZoVKkIKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}
+d426d6c752f5190f104962e8d23d21d75682","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125648Z"},"expires_at":"2024-07-02T13:11:48Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CZ2L35un7PoQkvEgGamzARQLRYSAYZ7eFTmSnoFOw6f9pLOZoVKkIKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}13:56:48.473629 trace git-lfs: xfer: adapter "basic" End()
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 0 stopping
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 2 auth signal received
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 2 stopping
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 7 auth signal received
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 7 stopping
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 4 auth signal received
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 4 stopping
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 5 auth signal received
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 5 stopping
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 3 auth signal received
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 3 stopping
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 6 auth signal received
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 6 stopping
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 1 auth signal received
+13:56:48.473629 trace git-lfs: xfer: adapter "basic" worker 1 stopping
+13:56:48.474136 trace git-lfs: xfer: adapter "basic" stopped
+13:56:48.474174 trace git-lfs: tq: starting transfer adapter "basic"
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" Begin() with 8 workers
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 0 starting
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 3 starting
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" started
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 2 starting
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 2 waiting for Auth
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 5 starting
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 5 waiting for Auth
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 6 starting
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 6 waiting for Auth
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 3 waiting for Auth
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 1 starting
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 1 waiting for Auth
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 4 starting
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 4 waiting for Auth
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 7 starting
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 7 waiting for Auth
+13:56:48.474174 trace git-lfs: xfer: adapter "basic" worker 0 processing job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:48.475232 trace git-lfs: HTTP: PUT https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> PUT /alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366 HTTP/1.1
+> Host: github-cloud.s3.amazonaws.com
+> Authorization: AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=a0605b58e0de9efbd9d813e56d79d426d6c752f5190f104962e8d23d21d75682
+> Content-Length: 179312238
+> Content-Type: application/octet-stream
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+> X-Amz-Content-Sha256: e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> X-Amz-Date: 20240702T125648Z
+>
+13:56:48.480599 trace git-lfs: xfer: adapter "basic" worker 0 finished job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:48.480599 trace git-lfs: tq: retrying object e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288: LFS: Put "https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366": authenticationrequired
+13:56:48.480599 trace git-lfs: tq: enqueue retry #8 after 10.00s for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288" (size: 179312238)
+13:56:58.487523 trace git-lfs: tq: sending batch of size 1
+13:56:58.487581 trace git-lfs: api: batch 1 files
+13:56:58.487581 trace git-lfs: creds: git credential cache ("https", "github.com", "")
+13:56:58.487581 trace git-lfs: Filled credentials for https://github.com/The-Phoenix-Group/oracle-finance-oac.git
+13:56:58.487581 trace git-lfs: HTTP: POST https://github.com/The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch
+> POST /The-Phoenix-Group/oracle-finance-oac.git/info/lfs/objects/batch HTTP/1.1
+> Host: github.com
+> Accept: application/vnd.git-lfs+json
+> Authorization: Basic * * * * *
+> Content-Length: 242
+> Content-Type: application/vnd.git-lfs+json; charset=utf-8
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+>
+{"operation":"upload","objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238}],"transfers":["lfs-standalone-file","basic","ssh"],"ref":{"name":"refs/heads/feature/test/yml"},"hash_algo":"sha256"}13:56:59.006229 trace git-lfs: http: decompressed gzipped response
+13:56:59.006667 trace git-lfs: HTTP: 200
+
+
+< HTTP/2.0 200 OK
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+< Cache-Control: private, max-age=60, s-maxage=60
+< Content-Security-Policy: default-src 'none'
+< Content-Type: application/json; charset=utf-8
+< Date: Tue, 02 Jul 2024 12:56:58 GMT
+< Etag: W/"59bd9c414f53ed2910b39ba792ab8f02aac885a86701b3a19f7530f4ba7d4b88"
+< Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+< Server: istio-envoy
+< Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+< Vary: Accept, Authorization, Cookie, X-GitHub-OTP,Accept-Encoding, Accept, X-Requested-With
+< X-Accepted-Oauth-Scopes:
+< X-Content-Type-Options: nosniff
+< X-Envoy-Upstream-Service-Time: 380
+< X-Frame-Options: deny
+< X-Github-Api-Version-Selected: 2022-11-28
+< X-Github-Media-Type: unknown
+< X-Github-Request-Id: 8A7C:6B643:7F3300:8E03D5:6683F910
+< X-Oauth-Client-Id: 0120e057bd645470c1ed
+< X-Oauth-Scopes: gist, repo, workflow
+< X-Ratelimit-Limit: 3000
+< X-Ratelimit-Remaining: 2991
+< X-Ratelimit-Reset: 1719925040
+< X-Ratelimit-Resource: lfs
+< X-Ratelimit-Used: 9
+< X-Xss-Protection: 0
+<
+13:56:59.006667 trace git-lfs: HTTP: {"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=57a2bd6861cde6c5f356a803fe4b
+{"objects":[{"oid":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","size":179312238,"actions":{"upload":{"href":"https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366","header":{"Authorization":"AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=57a2bd6861cde6c5f356a803fe4b13:56:59.006667 trace git-lfs: HTTP: a0a4e300df0ad332a29aecff87076fdbd6cd","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125658Z"},"expires_at":"2024-07-02T13:11:58Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CYtcJPrLVVJDTTH71iQtlO4VmSVtTEAyIPjZeEOabESMJLOZoVKmoKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}
+a0a4e300df0ad332a29aecff87076fdbd6cd","x-amz-content-sha256":"e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288","x-amz-date":"20240702T125658Z"},"expires_at":"2024-07-02T13:11:58Z","expires_in":900},"verify":{"href":"https://lfs.github.com/The-Phoenix-Group/oracle-finance-oac/objects/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288/verify","header":{"Authorization":"RemoteAuth gitauth-v1-gtf12CYtcJPrLVVJDTTH71iQtlO4VmSVtTEAyIPjZeEOabESMJLOZoVKmoKmbWVtYmVyunVzZXI6MTUwMjY4NTU3OkNPNjk3NDhfUEdIpXByb3Rvo3NzaA","Accept":"application/vnd.git-lfs+json"}}}}]}13:56:59.006667 trace git-lfs: xfer: adapter "basic" End()
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 0 stopping
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 7 auth signal received
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 7 stopping
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 6 auth signal received
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 2 auth signal received
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 6 stopping
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 5 auth signal received
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 5 stopping
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 1 auth signal received
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 1 stopping
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 3 auth signal received
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 3 stopping
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 4 auth signal received
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 4 stopping
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 2 stopping
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" stopped
+13:56:59.006667 trace git-lfs: tq: starting transfer adapter "basic"
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" Begin() with 8 workers
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" started
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 2 starting
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 2 waiting for Auth
+13:56:59.006667 trace git-lfs: xfer: adapter "basic" worker 0 starting
+13:56:59.007174 trace git-lfs: xfer: adapter "basic" worker 1 starting
+13:56:59.007200 trace git-lfs: xfer: adapter "basic" worker 1 waiting for Auth
+13:56:59.007174 trace git-lfs: xfer: adapter "basic" worker 3 starting
+13:56:59.007200 trace git-lfs: xfer: adapter "basic" worker 3 waiting for Auth
+13:56:59.007185 trace git-lfs: xfer: adapter "basic" worker 6 starting
+13:56:59.007200 trace git-lfs: xfer: adapter "basic" worker 6 waiting for Auth
+13:56:59.007174 trace git-lfs: xfer: adapter "basic" worker 4 starting
+13:56:59.007185 trace git-lfs: xfer: adapter "basic" worker 7 starting
+13:56:59.007200 trace git-lfs: xfer: adapter "basic" worker 4 waiting for Auth
+13:56:59.007185 trace git-lfs: xfer: adapter "basic" worker 5 starting
+13:56:59.007200 trace git-lfs: xfer: adapter "basic" worker 5 waiting for Auth
+13:56:59.007200 trace git-lfs: xfer: adapter "basic" worker 7 waiting for Auth
+13:56:59.007200 trace git-lfs: xfer: adapter "basic" worker 0 processing job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:59.008266 trace git-lfs: HTTP: PUT https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> PUT /alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366 HTTP/1.1
+> Host: github-cloud.s3.amazonaws.com
+> Authorization: AWS4-HMAC-SHA256 Credential=AKIA5BA2674WPWWEFGQ5/20240702/us-east-1/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=57a2bd6861cde6c5f356a803fe4ba0a4e300df0ad332a29aecff87076fdbd6cd
+> Content-Length: 179312238
+> Content-Type: application/octet-stream
+> User-Agent: git-lfs/3.4.0 (GitHub; windows amd64; go 1.20.6; git d06d6e9e)
+> X-Amz-Content-Sha256: e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288
+> X-Amz-Date: 20240702T125658Z
+>
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 0 finished job for "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288"
+13:56:59.038616 trace git-lfs: tq: refusing to retry "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288", too many retries (8)
+13:56:59.038616 trace git-lfs: tq: refusing to retry "e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288", too many retries (8)
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" End()
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 0 stopping
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 7 auth signal received
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 7 stopping
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 2 auth signal received
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 2 stopping
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 1 auth signal received
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 1 stopping
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 3 auth signal received
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 3 stopping
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 6 auth signal received
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 6 stopping
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 4 auth signal received
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 4 stopping
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 5 auth signal received
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" worker 5 stopping
+13:56:59.038616 trace git-lfs: xfer: adapter "basic" stopped
+LFS: Put "https://github-cloud.s3.amazonaws.com/alambic/media/654101348/e4/75/e475f4da4c2a12de94f1972e1cff65d4a9e14f0fd03382d8f1f43db2e2e62288?actor_id=150268557&key_id=0&repo_id=721251366": authenticationrequired
+error: failed to push some refs to 'https://github.com/The-Phoenix-Group/oracle-finance-oac.git'
